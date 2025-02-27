@@ -55,7 +55,7 @@ public class start_stop {
 		driver.findElement(By.xpath("//a[@id=\"startButton\"]")).click();
 		System.out.println("Start Tea Break clicked Successfully");
 		Thread.sleep(randomTime);
-		System.out.println("Waiting");
+		System.out.println("Waiting"); 
 		
 		driver.findElement(By.xpath("//a[@id=\"stopButton\"]")).click();
 		System.out.println("Stop button clicked Successfully");

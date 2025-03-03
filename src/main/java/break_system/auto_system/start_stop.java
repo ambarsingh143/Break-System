@@ -39,6 +39,10 @@ public class start_stop {
 		
 		driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
 		System.out.println("Submit button clicked Successfully");
+		Thread.sleep(3000);
+		
+		driver.findElement(By.xpath("//button[@id=\"skip-login\"]")).click();
+		System.out.println("Skip punch-in successfully");
 		
 		driver.findElement(By.xpath("//select[@id=\"breaktype\"]")).click();
 		System.out.println("Select Break-type button clicked Successfully");

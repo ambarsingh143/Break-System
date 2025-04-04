@@ -49,7 +49,7 @@ public class start_stop {
 		
 		driver.findElement(By.xpath("//option[@value=\"Lunch\"]")).click();
 		System.out.println("Select Lunch Break clicked Successfully");
-		Thread.sleep(1200000);
+		Thread.sleep(900000);
 		
 //		int minTime = 900000; // 15 Minutes in Milisecond
 //		int maxTime = 1020000; // 17 Minutes in Milisecond

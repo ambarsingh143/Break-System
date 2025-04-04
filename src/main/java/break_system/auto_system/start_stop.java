@@ -47,22 +47,23 @@ public class start_stop {
 		driver.findElement(By.xpath("//select[@id=\"breaktype\"]")).click();
 		System.out.println("Select Break-type button clicked Successfully");
 		
-		driver.findElement(By.xpath("//option[@value=\"Tea\"]")).click();
-		System.out.println("Select Tea Break clicked Successfully");
+		driver.findElement(By.xpath("//option[@value=\"Lunch\"]")).click();
+		System.out.println("Select Lunch Break clicked Successfully");
+		Thread.sleep(1200000);
 		
-		int minTime = 900000; // 15 Minutes in Milisecond
-		int maxTime = 1020000; // 17 Minutes in Milisecond
-		Random  random = new Random();
-		int randomTime = random.nextInt(maxTime - minTime) + minTime;
-		System.out.println("Random time selected " + randomTime + " millisecond");
-		
+//		int minTime = 900000; // 15 Minutes in Milisecond
+//		int maxTime = 1020000; // 17 Minutes in Milisecond
+//		Random  random = new Random();
+//		int randomTime = random.nextInt(maxTime - minTime) + minTime;
+//		System.out.println("Random time selected " + randomTime + " millisecond");
+//		
 		driver.findElement(By.xpath("//a[@id=\"startButton\"]")).click();
 		System.out.println("Start Tea Break clicked Successfully");
-		Thread.sleep(randomTime);
-		System.out.println("Waiting"); 
-		
-		driver.findElement(By.xpath("//a[@id=\"stopButton\"]")).click();
-		System.out.println("Stop button clicked Successfully");
+//		Thread.sleep(randomTime);
+//		System.out.println("Waiting"); 
+//		
+//		driver.findElement(By.xpath("//a[@id=\"stopButton\"]")).click();
+//		System.out.println("Stop button clicked Successfully");
 				
 	}
 
